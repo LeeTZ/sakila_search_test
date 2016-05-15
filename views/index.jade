@@ -12,16 +12,13 @@ block content
                 tr
                     td ID
                     td Name
-                    td City
+                    td Email
                     td Address
                     td Phone
-                    td Zipcode
             tbody
                 tr(ng-repeat="x in customerList") 
-                    td {{x.ID}}
-                    td {{x.name}}
-                    td {{x.city}}
+                    td {{x.customer_id}}
+                    td {{x.first_name}} {{x.last_name}}
+                    td {{x.email}}
                     td {{x.address}}
                     td {{x.phone}}
-                    td {{x['zip code']}}
-   

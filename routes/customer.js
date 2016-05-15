@@ -14,7 +14,8 @@ router.post('/count', function(req, res) {
 router.post('/list', function(req, res) {
    var countryQ = req.body.countryQuery;
 
-   connection.query('select * from customer_list where country="' + countryQ + '"',function(err,rows){
+
+   connection.query('select customer.customer_id, customer.first_name, customer.last_name, customer.email, customer_list.address, customer_list.phone from customer, customer_list where (customer_list.country="' + countryQ + '" and customer.customer_id = customer_list.ID)',function(err,rows){
         if(err)
             console.log("Error in getting cousumer lists.");
         res.json(rows);
