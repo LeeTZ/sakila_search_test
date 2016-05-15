@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div#wrapper
+        h1 Search Sakila Customers by Country!
+    
+        select#searchbar(data-placeholder="Choose a country..." ng-model="countryQuery" ng-change="showCustomers(countryQuery)")
+            option
+    
+        table#customertable.tablesorter.tablesorter-blue
+            thead
+                tr
+                    td ID
+                    td Name
+                    td City
+                    td Address
+                    td Phone
+                    td Zipcode
+            tbody
+                tr(ng-repeat="x in customerList") 
+                    td {{x.ID}}
+                    td {{x.name}}
+                    td {{x.city}}
+                    td {{x.address}}
+                    td {{x.phone}}
+                    td {{x['zip code']}}
+   

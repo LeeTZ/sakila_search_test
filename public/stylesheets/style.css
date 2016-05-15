@@ -1,0 +1,86 @@
+body { 
+  background: #eee url('http://i.imgur.com/eeQeRmk.png'); 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #585858;
+  padding: 22px 10px;
+  padding-bottom: 55px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#searchbar{
+    width: 400px;
+}
+.chosen-container{
+    display: block;
+    margin: 10px auto;   
+}
+
+
+/** page structure **/
+#wrapper {
+  display: block;
+  width: 850px;
+  background: #fff;
+  margin: 5% auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+  min-height: 500px;
+}
+
+#customertable {
+    margin: 30px auto;
+    margin-bottom: 15px;
+}
+
+
+#customertable thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#customertable thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#customertable thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#customertable thead tr th.headerSortUp, #customertable thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#customertable thead tr th.headerSortUp span {
+  background-image: url('http://i.imgur.com/SP99ZPJ.png');
+}
+#customertable thead tr th.headerSortDown span {
+  background-image: url('http://i.imgur.com/RkA9MBo.png');
+}
+
+
+#customertable tbody tr { 
+  color: #555;
+}
+#customertable tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#customertable tbody tr td.lalign {
+  text-align: left;
+}
+
+h1 { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}
