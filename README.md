@@ -1,6 +1,6 @@
 # sakila_search_test
 
-a small CURD with NodeJS+Express+AngularJS+MySQL
+a small web application built with NodeJS+Express+AngularJS+MySQL
 
 ## What is it? ##
 A simple search + dropdown application, user could search through the list of countries with the search feature or use the  dropdown to select a country. The search and dropdown list will both have Name of the country (Count of customers). A list of users from the country selected would be retrived.

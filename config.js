@@ -9,7 +9,8 @@ function handleDisconnect() {
             user        :         "bc929804294e20",
             password    :         "ef99ee42",
             database     :        "heroku_468468891c6d425"
-    });*/
+    });
+    */
     // local
     connection      =         mysql.createConnection({
         host        :         "localhost",
